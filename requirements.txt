@@ -1,6 +1,6 @@
 tensorflow==2.12.0
 pandas
-gdown 
+kagglehub==0.3.6 
 dvc
 mlflow==2.2.2
 notebook
