@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/surya/CampusX/End-to-end-Chest-Cancer-Prediction/mlruns/0/84ff4b4f58eb47d3b235e1fd5cdd0e6c/artifacts
+end_time: 1735990491838
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 84ff4b4f58eb47d3b235e1fd5cdd0e6c
+run_name: gifted-owl-434
+run_uuid: 84ff4b4f58eb47d3b235e1fd5cdd0e6c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735990462866
+status: 4
+tags: []
+user_id: surya

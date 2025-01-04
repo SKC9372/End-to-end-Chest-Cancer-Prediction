@@ -1,7 +1,8 @@
 from src.CancerClassification.constants import CONFIG_FILE_PATH, PARAMS_FILE_PATH
 from src.CancerClassification.utils.common import read_yaml,create_directories
 from src.CancerClassification.entity.config_entity import (DataIngestionConfig,
-                                                           PrepareBaseModelConfig,TrainingConfig)
+                                                           PrepareBaseModelConfig,
+                                                           TrainingConfig,EvaluationConfig)
 from pathlib import Path
 import os
 
@@ -62,3 +63,14 @@ class ConfigurationManager:
         )
 
         return training_model_config
+    
+    def get_evaluation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_to_model=r'artifacts\training\model.h5',
+            test_data=r'artifacts\data_ingestion\Data\test',
+            all_params=self.params,
+            mlflow_uri='https://dagshub.com/SKC9372/End-to-end-Chest-Cancer-Prediction.mlflow',
+            params_batch_size=self.params.BATCH_SIZE,
+            params_image_size=self.params.IMAGE_SIZE
+            )
+        return eval_config
